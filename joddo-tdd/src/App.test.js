@@ -14,8 +14,5 @@ const setup = () => shallow(<App />);
 const findByTestAttr = (wrapper, val) => wrapper.find(`[data-test='${val}']`);
 
 test('renders without crashing', () => {
-   const wrapper = setup();
-   const appComponent = findByTestAttr(wrapper,'component-app')
-   expect (appComponent.length).toBe(1);
-   //console.log(wrapper.debug())
+  
 });
